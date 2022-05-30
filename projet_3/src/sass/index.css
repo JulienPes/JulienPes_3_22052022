@@ -42,7 +42,6 @@ a {
 
 .paris_section {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100%;
   height: 60px;
@@ -78,7 +77,7 @@ a {
   padding: 35px 64px 15px 64px;
   margin: 0;
 }
-.explore_section .explore_text {
+.explore_section p {
   padding: 0 40px 15px 40px;
 }
 .explore_section .button_box {
@@ -86,9 +85,6 @@ a {
   justify-content: center;
 }
 .explore_section .explore_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 55%;
   height: 50px;
   border-radius: 100px;
@@ -226,6 +222,13 @@ a {
   --lightgray: rgba(128, 128, 128, 0.042);
 }
 
+.logo_section .fas {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  font-size: x-large;
+}
+
 .menu_img {
   width: 100%;
   height: 300px;
@@ -318,4 +321,200 @@ a {
   color: white;
   font-family: "roboto";
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+  }
+
+  .function_section {
+    padding: 40px 80px;
+  }
+
+  .resto_section {
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  .resto_section .resto_card {
+    flex: 40%;
+  }
+  .resto_section .card_image {
+    width: 100%;
+  }
+
+  .main_menu {
+    border-radius: 0;
+  }
+  .main_menu .menu_header {
+    padding: 35px 0;
+    justify-content: center;
+    gap: 10%;
+  }
+  .main_menu header .green_line {
+    width: 100%;
+  }
+
+  .footer_media {
+    display: flex;
+    justify-content: center;
+  }
+  .footer_media .logo_ohmyfood {
+    padding: 0 0 50px 0;
+  }
+
+  .footer {
+    padding: 30px 30px 50px 30px;
+  }
+  .footer .footer_box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer .footer_box .footer_text_box {
+    gap: 5px;
+  }
+  .footer .footer_box .footer_text {
+    font-size: 18px;
+  }
+  .footer .footer_box .footer_text_box_2 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo_section {
+    height: 120px;
+  }
+  .logo_section .fas {
+    display: none;
+  }
+  .logo_section .logo_ohmyfood {
+    height: 45px;
+  }
+
+  .menu_img {
+    height: 500px;
+  }
+
+  .main_menu {
+    padding: 0 150px 75px 150px;
+    border-radius: 0px;
+  }
+  .main_menu h1 {
+    font-size: 30px;
+  }
+  .main_menu .menu_header {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 0 0;
+    gap: 20px;
+  }
+
+  .paris_section {
+    height: 30px;
+    order: -1;
+  }
+  .paris_section .city {
+    font-size: 17px;
+  }
+
+  .explore_section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .explore_section h1 {
+    padding: 35px 0 15px 0;
+  }
+  .explore_section p {
+    padding: 0;
+  }
+  .explore_section .explore_button {
+    width: 100%;
+    padding: 0 80px;
+    border-radius: 6px;
+  }
+
+  .function_section {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: 20px 40px;
+    gap: 20px;
+  }
+  .function_section .function_button {
+    flex: 20%;
+    gap: 10px;
+    padding: 30px 22px;
+  }
+
+  .resto_section {
+    justify-content: center;
+    padding: 20px 40px 80px 40px;
+  }
+  .resto_section .resto_card {
+    flex: 20%;
+  }
+  .resto_section .resto_card .resto_card_new {
+    width: 35%;
+  }
+  .resto_section .card_image {
+    width: 100%;
+  }
+
+  .footer .footer_media .logo_ohmyfood {
+    height: 30px;
+  }
+  .footer .footer_box .footer_text {
+    font-size: 17px;
+  }
+  .footer .footer_box .footer_text_box_2 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo_section {
+    height: 120px;
+  }
+  .logo_section .logo_ohmyfood {
+    height: 50px;
+  }
+
+  .menu_img {
+    height: 500px;
+  }
+
+  .main_menu {
+    padding: 0 150px 75px 150px;
+    border-radius: 0px;
+  }
+  .main_menu .menu_header {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 0 0;
+    gap: 20px;
+  }
+  .main_menu .menu_header h1 {
+    font-size: 35px;
+  }
+
+  .function_section .function_button {
+    gap: 10px;
+    padding: 30px 80px;
+  }
+
+  .resto_section {
+    justify-content: center;
+  }
+  .resto_section .card_image {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
