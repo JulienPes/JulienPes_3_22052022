@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'roboto';
+}
+
+h3 {
+    font-size: 18px;
+    color: black;
+}
+
+p {
+    font-family: 'roboto';
+    font-weight: 200;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'roboto';
+}
+
+.logo_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+
+    .logo_ohmyfood {
+        align-items: center;
+        height: 32px;
+    }
+}
+
+.menu_img {
+    object-fit: cover;
+}

@@ -1,0 +1,250 @@
+@media screen and (min-width: 768px) {
+
+
+    header {
+        width: 100%;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+        }
+    }
+
+
+    .function_section {
+        padding: 40px 80px;
+    }
+
+
+    .resto_section {
+        justify-content: center;
+        flex-flow: wrap;
+
+        .resto_card {
+            flex: 40%;
+        }
+
+        .card_image {
+            width: 100%
+        }
+    }
+
+    .main_menu {
+        border-radius: 0;
+
+        .menu_header {
+            padding: 35px 0;
+            justify-content: center;
+            gap: 10%;
+        }
+
+        header {
+            .green_line {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer_media {
+        display: flex;
+        justify-content: center;
+
+        .logo_ohmyfood {
+            padding: 0 0 50px 0;
+        }
+    }
+
+    .footer {
+        padding: 30px 30px 50px 30px;
+
+        .footer_box {
+            flex-direction: row;
+            justify-content: space-around;
+
+            .footer_text_box {
+                gap: 5px;
+            }
+
+            .footer_text {
+                font-size: 18px;
+            }
+
+            .footer_text_box_2 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo_section {
+        height: 120px;
+
+        .fas {
+            display: none;
+        }
+
+        .logo_ohmyfood {
+            height: 45px;
+        }
+
+    }
+
+    .menu_img {
+        height: 500px;
+    }
+
+    .main_menu {
+        padding: 0 150px 75px 150px;
+        border-radius: 0px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .menu_header {
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0 0 0;
+            gap: 20px;
+        }
+
+    }
+
+    .paris_section {
+        height: 30px;
+        order: -1;
+
+
+        .city {
+            font-size: 17px;
+        }
+    }
+
+    .explore_section {
+        flex-direction: row;
+        justify-content: space-around;
+
+        h1 {
+            padding: 35px 0 15px 0;
+        }
+
+        p {
+            padding: 0;
+        }
+
+        .explore_button {
+            width: 100%;
+            padding: 0 80px;
+            border-radius: 6px;
+        }
+    }
+
+    .function_section {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        padding: 20px 40px;
+        gap: 20px;
+
+        .function_button {
+            flex: 20%;
+            gap: 10px;
+            padding: 30px 22px;
+        }
+    }
+
+    .resto_section {
+        justify-content: center;
+        padding: 20px 40px 80px 40px;
+
+        .resto_card {
+            flex: 20%;
+
+            .resto_card_new {
+                width: 35%;
+            }
+        }
+
+        .card_image {
+            width: 100%
+        }
+    }
+
+    .footer {
+        .footer_media {
+            .logo_ohmyfood {
+                height: 30px;
+            }
+        }
+
+        .footer_box {
+            .footer_text {
+                font-size: 17px;
+            }
+
+            .footer_text_box_2 {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .logo_section {
+        height: 120px;
+
+        .logo_ohmyfood {
+            height: 50px;
+        }
+    }
+
+    .menu_img {
+        height: 500px;
+    }
+
+    .main_menu {
+        padding: 0 150px 75px 150px;
+        border-radius: 0px;
+
+        .menu_header {
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0 0 0;
+            gap: 20px;
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+    }
+
+    .function_section {
+
+        .function_button {
+            gap: 10px;
+            padding: 30px 80px;
+        }
+
+    }
+
+    .resto_section {
+        justify-content: center;
+
+        .card_image {
+            width: 100%;
+        }
+    }
+}
