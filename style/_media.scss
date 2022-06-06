@@ -33,17 +33,41 @@
     .main_menu {
         border-radius: 0;
 
-        .menu_header {
-            padding: 35px 0;
-            justify-content: center;
-            gap: 10%;
+        .menu_header_1 {
+            justify-content: unset;
+            padding: 0 0 0 40px;
+            gap: 50px;
+
         }
 
-        header {
-            .green_line {
-                width: 100%;
-            }
+        .menu_header {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            flex: 1;
         }
+
+
+    }
+
+    .section_menu {
+        .green_line {
+            width: 20%;
+        }
+    }
+
+    .explore_button {
+        font-size: 20px;
+        margin: 50px 0;
+
+    }
+
+    .explore_text {
+        background-color: white;
+    }
+
+    .button_box {
+        background-color: var(--lightgray);
     }
 
     .footer_media {
@@ -81,10 +105,7 @@
 
 
 @media screen and (min-width: 992px) {
-    header {
-        display: flex;
-        flex-direction: column;
-    }
+
 
     .logo_section {
         height: 120px;
@@ -104,20 +125,25 @@
     }
 
     .main_menu {
-        padding: 0 150px 75px 150px;
+        padding: 30px 0 45px 20px;
         border-radius: 0px;
 
         h1 {
             font-size: 30px;
         }
 
-        .menu_header {
-            flex-direction: column;
-            align-items: center;
-            padding: 50px 0 0 0;
-            gap: 20px;
+        .menu_header_1 {
+            gap: 30px;
         }
 
+
+    }
+
+
+    .section_menu {
+        h2 {
+            font-size: 24px;
+        }
     }
 
     .paris_section {
@@ -132,7 +158,17 @@
 
     .explore_section {
         flex-direction: row;
-        justify-content: space-around;
+        width: 100%;
+
+        .explore_text {
+            padding: 0 170px 0 110px;
+            background-color: transparent;
+        }
+
+        .button_box {
+            background-color: transparent;
+        }
+
 
         h1 {
             padding: 35px 0 15px 0;
@@ -146,7 +182,9 @@
             width: 100%;
             padding: 0 80px;
             border-radius: 6px;
+            margin: 50px 0;
         }
+
     }
 
     .function_section {
@@ -202,6 +240,11 @@
 
 
 @media screen and (min-width: 1440px) {
+    .media_header {
+        display: flex;
+        flex-direction: column;
+    }
+
     .logo_section {
         height: 120px;
 
@@ -215,17 +258,18 @@
     }
 
     .main_menu {
-        padding: 0 150px 75px 150px;
+        padding: 20px 100px 0 90px;
         border-radius: 0px;
 
         .menu_header {
-            flex-direction: column;
-            align-items: center;
-            padding: 50px 0 0 0;
-            gap: 20px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            flex: 1;
+
 
             h1 {
-                font-size: 35px;
+                font-size: 40px;
             }
         }
 
@@ -246,5 +290,34 @@
         .card_image {
             width: 100%;
         }
+    }
+
+    .menu_price {
+        font-size: 18px;
+        padding: 0 20px 13px 0;
+    }
+
+    .explore_section {
+        align-items: center;
+        background-color: white;
+        justify-content: space-around;
+
+        .explore_text {
+            background-color: white;
+            padding: 0;
+        }
+
+        .button_box {
+            background-color: white;
+        }
+
+    }
+
+    .explore_button {
+        margin: 50px 0;
+    }
+
+    .section_menu {
+        padding: 20px 110px;
     }
 }

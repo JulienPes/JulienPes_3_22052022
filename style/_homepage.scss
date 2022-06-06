@@ -3,8 +3,8 @@
     justify-content: center;
     width: 100%;
     height: 60px;
-    background-color: rgba(128, 128, 128, 0.1);
-    box-shadow: -2px -2px 0 1px rgba(0, 0, 0, 0.08);
+    background-color: rgba(128, 128, 128, 0.2);
+    box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.17);
 
     .city_box {
         display: flex;
@@ -29,28 +29,38 @@
     flex-direction: column;
     text-align: center;
     background-color: var(--lightgray);
-    padding: 0 0 50px 0;
 
     h1 {
         font-weight: 600;
-        font-size: 27px;
+        font-size: 24px;
         font-family: roboto;
         padding: 35px 64px 15px 64px;
         margin: 0;
     }
 
     p {
+        font-size: 16px;
         padding: 0 40px 15px 40px;
     }
 
     .button_box {
         display: flex;
         justify-content: center;
+        background-color: var(--lightgray);
+        padding-top: 20px;
+    }
+
+    .explore_text {
+        background-color: var(--lightgray);
+
+        h1 {
+            font-family: roboto;
+        }
     }
 
     .explore_button {
         width: 55%;
-        height: 50px;
+        margin: 20px 0 60px 0;
         border-radius: 100px;
         background: linear-gradient(#FF79DA, #9256dcd4);
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.228);
@@ -188,6 +198,10 @@
         display: flex;
         flex-direction: column;
         gap: 6px;
+    }
+
+    .footer_text {
+        color: white;
     }
 
     .footer_text_box {

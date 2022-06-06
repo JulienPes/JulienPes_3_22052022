@@ -13,38 +13,32 @@
     height: 300px;
 }
 
-.menu_header {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px 35px 0 20px;
-
-
-    h1 {
-        font-family: shrikhand;
-        font-size: 30px;
-        margin: 0;
-    }
-}
-
 .main_menu {
     background-color: rgb(240, 240, 240);
     margin: -70px 0 0 0;
     border-radius: 40px 40px 0 0;
-    padding: 0 12px 75px 12px;
+    padding: 10px 0 0 0;
     isolation: isolate;
+
+    .menu_header_1 {
+        display: flex;
+        justify-content: space-between;
+        font-family: Shrikhand;
+        padding: 0 35px 0 15px;
+        font-size: 14px;
+    }
 
     h2 {
         font-weight: 300;
         font-size: 22px;
         padding: 50px 0 8px 0;
+
     }
 
-    .green_line {
-        width: 15%;
-        height: 4px;
-        background-color: var(--thirdgreen);
-    }
+
 }
+
+
 
 .heart_icon {
     display: flex;
@@ -52,57 +46,17 @@
     font-size: x-large;
 }
 
-.menu_card {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 15px;
-    height: 70px;
-    padding: 15px 23px 0 12px;
-    margin: 20px 0 0 0;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.065);
-
-    .menu_name {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-        h3 {
-            font-family: Roboto;
-            font-weight: 500;
-            font-size: 20px;
-        }
-
-        p {
-            font-weight: 300;
-            font-size: 17px;
-        }
-
-
-    }
-
-    .menu_price {
-        display: flex;
-        align-items: flex-end;
-        font-size: 19px;
-        font-weight: bold;
-        font-family: Helvetica, sans-serif;
-        letter-spacing: 1px;
-        padding: 0 0 16px 0;
-    }
-
-}
-
 .button_box {
     display: flex;
     justify-content: center;
+    background-color: rgb(240, 240, 240);
 }
 
 .explore_button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 0 0;
+    margin: 20px 0 50px 0;
     width: 50%;
     height: 50px;
     border-radius: 100px;
@@ -111,4 +65,87 @@
     color: white;
     font-family: 'roboto';
     font-weight: 500;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.menu_card {
+    padding: 16px;
+    display: flex;
+    border-radius: 12px;
+    margin: 16px 0 0 0;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+
+    h3 {
+        font-family: roboto;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.section_menu {
+    background-color: rgb(240, 240, 240);
+    padding: 20px 15px 22px 15px;
+
+    .green_line {
+        width: 13%;
+        height: 3px;
+        margin: 4px 0 0 1px;
+        background-color: var(--thirdgreen);
+    }
+
+
+
+    h2 {
+        font-family: roboto;
+        font-weight: 200;
+        font-size: 20px;
+    }
+}
+
+.menu_title {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.menu_description {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.menu_price {
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 8px;
+}
+
+.icon_logo {
+    color: var(--thirdgreen);
 }
