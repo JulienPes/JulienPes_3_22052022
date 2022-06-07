@@ -40,6 +40,10 @@ a {
      object-fit: cover;
 }
 
+.arrow {
+  color: black;
+}
+
 .paris_section {
   display: flex;
   justify-content: center;
