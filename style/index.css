@@ -163,6 +163,17 @@ a {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
+}
+.resto_section .card_image_2 {
+  height: 180px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 90%;
+     object-position: 50% 90%;
 }
 .resto_section .resto_card_new {
   position: absolute;
@@ -628,11 +639,18 @@ a {
 }
 
 .function_button:hover {
-  background: linear-gradient(rgba(248, 155, 222, 0.3607843137), rgba(162, 118, 215, 0.5725490196));
+  background: rgba(128, 128, 128, 0.088);
+}
+.function_button:hover .fe {
+  color: var(--mainpurple);
 }
 
 .resto_card:hover {
   box-shadow: 3px 5px 14px 8px rgba(146, 86, 220, 0.2588235294);
+}
+
+.ft {
+  color: black;
 }
 
 .heart {
