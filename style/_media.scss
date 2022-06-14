@@ -1,5 +1,13 @@
 @media screen and (min-width: 768px) {
-
+    .logo_section {
+        .fas {
+            position: absolute;
+            top: 30px;
+            left: 35px;
+            font-size: x-large;
+            z-index: 5;
+        }
+    }
 
     header {
         width: 100%;
@@ -105,14 +113,19 @@
 
 
 @media screen and (min-width: 992px) {
-
+    .logo_section {
+        .fas {
+            position: absolute;
+            top: 50px;
+            left: 35px;
+            font-size: x-large;
+            z-index: 5;
+        }
+    }
 
     .logo_section {
         height: 120px;
 
-        .fas {
-            display: none;
-        }
 
         .logo_ohmyfood {
             height: 45px;
@@ -240,6 +253,16 @@
 
 
 @media screen and (min-width: 1440px) {
+    .logo_section {
+        .fas {
+            position: absolute;
+            top: 50px;
+            left: 35px;
+            font-size: x-large;
+            z-index: 5;
+        }
+    }
+
     .media_header {
         display: flex;
         flex-direction: column;
